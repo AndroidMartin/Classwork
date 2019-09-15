@@ -40,5 +40,7 @@ public class Main {
         IntEqualityPrinter.printEqual(1,2,4);
 
         System.out.println(PlayingCat.isCatPlaying(false,35));
+
+        NumberOfDaysInMonth.printNumberOfDaysInMonth(10,2017);
     }
 }
