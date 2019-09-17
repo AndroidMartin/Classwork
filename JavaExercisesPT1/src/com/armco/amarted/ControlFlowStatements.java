@@ -1,6 +1,6 @@
 package com.armco.amarted;
 
-public class DigitSums {
+public class ControlFlowStatements {
 
     public static boolean isPalindrome(int number) {
 
@@ -110,6 +110,20 @@ public class DigitSums {
             return false;
         }
         return true;
+    }
+
+    public static int getGreatestCommonDivisor(int first, int second){
+        if (first<10 || second<10){
+            return -1;
+        }
+
+        int divisor = 0;
+
+        for (int i; i<=first; i++){
+            if (first % i == 0) {
+
+            }
+        }
     }
 
 }

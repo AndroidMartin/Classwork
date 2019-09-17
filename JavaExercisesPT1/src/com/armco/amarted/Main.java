@@ -42,5 +42,14 @@ public class Main {
         System.out.println(PlayingCat.isCatPlaying(false,35));
 
         NumberOfDaysInMonth.printNumberOfDaysInMonth(10,2017);
+
+        System.out.println("\nSum Odd Ranges:\n" + SumOddRange.sumOdd(100,1000));
+
+        System.out.println("\nIs the number a palindrome?\n" + ControlFlowStatements.isPalindrome(-717));
+
+        System.out.println("\nSum of first and last digit is: " + ControlFlowStatements.sumFirstAndLastDigit(7353));
+        System.out.println("Sum of the even digits is: " + ControlFlowStatements.getEvenDigitSum(123456789));
+        System.out.println("Has shared digit: " + ControlFlowStatements.hasSharedDigit(12,13));
+        System.out.println("Has same last digit: " + ControlFlowStatements.hasSameLastDigit(426,874,126));
     }
 }
