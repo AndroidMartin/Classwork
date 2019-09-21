@@ -51,5 +51,16 @@ public class Main {
         System.out.println("Sum of the even digits is: " + ControlFlowStatements.getEvenDigitSum(123456789));
         System.out.println("Has shared digit: " + ControlFlowStatements.hasSharedDigit(12,13));
         System.out.println("Has same last digit: " + ControlFlowStatements.hasSameLastDigit(426,874,126));
+
+        System.out.println("\nGreatest Common Denominator is: " + ControlFlowStatements.getGreatestCommonDivisor(81,153));
+
+        System.out.println("\nFactors of number are: ");
+        ControlFlowStatements.printFactors(32);
+
+        System.out.println("Is it a perfect number:");
+        System.out.println(ControlFlowStatements.isPerfectNumber(5));
+
+        System.out.println("\nNumber to Words: ");
+        ControlFlowStatements.numberToWords(1000);
     }
 }

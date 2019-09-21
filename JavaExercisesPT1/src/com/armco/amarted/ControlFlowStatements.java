@@ -112,18 +112,151 @@ public class ControlFlowStatements {
         return true;
     }
 
-    public static int getGreatestCommonDivisor(int first, int second){
-        if (first<10 || second<10){
+
+    public static int getGreatestCommonDivisor(int a, int b){
+        if (a<10 || b<10) {
             return -1;
         }
 
-        int divisor = 0;
-
-        for (int i; i<=first; i++){
-            if (first % i == 0) {
-
+        int commonDivisor = 0;
+        int i = 0;
+        while (i<a){
+            i++;
+            if (a % i == 0 && b % i == 0) {
+                commonDivisor = i;
             }
         }
+        return commonDivisor;
+    }
+
+    public static void printFactors (int number){
+        if (number<1){
+            System.out.println("Invalid Value");
+        }
+
+        for (int i=1; i<=number; i++){
+            if (number % i == 0) {
+                System.out.println(i);
+            }
+        }
+    }
+
+    public static boolean isPerfectNumber(int number){
+        if (number < 1){
+            return false;
+        }
+
+        int sum = 0;
+
+        for (int i=1; i<number; i++) {
+            if (number % i == 0) {
+                sum += i;
+            }
+        }
+
+        if (sum == number) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public static void numberToWords(int number){
+        if (number<0){
+            System.out.println("Invalid Value");
+        }
+
+//        System.out.println("Converting " + number + "...");
+//        System.out.println("Factoring all " + getDigitCount(number) + " digits...");
+
+        int numberToPrint = reverse(number);
+        int digit = 0;
+        int places = getDigitCount(numberToPrint);
+        int leadingZereos = getDigitCount(number) - getDigitCount(numberToPrint);
+
+        while (places > 0) {
+            places--;
+            digit = numberToPrint % 10;
+            numberToPrint /= 10;
+            switch (digit) {
+                case 0:
+                    System.out.println("Zero");
+                    break;
+                case 1:
+                    System.out.println("One");
+                    break;
+                case 2:
+                    System.out.println("Two");
+                    break;
+                case 3:
+                    System.out.println("Three");
+                    break;
+                case 4:
+                    System.out.println("Four");
+                    break;
+                case 5:
+                    System.out.println("Five");
+                    break;
+                case 6:
+                    System.out.println("Six");
+                    break;
+                case 7:
+                    System.out.println("Seven");
+                    break;
+                case 8:
+                    System.out.println("Eight");
+                    break;
+                case 9:
+                    System.out.println("Nine");
+                    break;
+            }
+        }
+
+        if (getDigitCount(number) != getDigitCount(numberToPrint)){
+            for (int i = leadingZereos; i>0; i--){
+//                digitString = digitString + "Zero ";
+                System.out.println("Zero");
+            }
+        }
+    }
+
+    public static int reverse(int a) {
+    // Reverses the number submitted
+
+        int inverse = 0;
+        int digit;
+        int count = a;
+
+        if (a<0){
+            count = a * (-1);
+        }
+
+        count = getDigitCount(a);
+
+        while (count > 0) {
+            digit = a % 10;
+            inverse *= 10;
+            inverse += digit;
+            a /= 10;
+            count--;
+        }
+//        System.out.println("Inverse is: " + inverse);
+        return inverse;
+    }
+
+    public static int getDigitCount (int i){
+    // Accounts for leading 0s -  100 -> 001
+        if (i<0){
+            return -1;
+        }
+
+        int digitCount = 0;
+
+        while (i>0){
+                digitCount++;
+                i /= 10;
+        }
+        return digitCount;
     }
 
 }
