@@ -285,6 +285,10 @@ public class ControlFlowStatements {
 
 
     public static int getLargestPrime(int number){
+        if (number < 2) {
+            return -1;
+        }
+
 
     }
 
