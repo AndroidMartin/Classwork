@@ -63,8 +63,7 @@ public class Main {
         System.out.println("\nNumber to Words: ");
         ControlFlowStatements.numberToWords(1234);
 
-        System.out.println();
-        ParsingValues.canPack(2,5,9);
+        System.out.println("\nCan make package: " + ParsingValues.canPack(2,10,18));
 
     }
 }
