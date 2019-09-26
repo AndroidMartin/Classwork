@@ -166,13 +166,13 @@ public class ControlFlowStatements {
             System.out.println("Invalid Value");
         }
 
-//        System.out.println("Converting " + number + "...");
-//        System.out.println("Factoring all " + getDigitCount(number) + " digits...");
+        System.out.println("Converting " + number + "...");
+        System.out.println("Factoring all " + getDigitCount(number) + " digits...");
 
         int numberToPrint = reverse(number);
         int digit = 0;
         int places = getDigitCount(numberToPrint);
-        int leadingZereos = getDigitCount(number) - getDigitCount(numberToPrint);
+        int leadingZeroes = getDigitCount(number) - getDigitCount(numberToPrint);
 
         while (places > 0) {
             places--;
@@ -213,8 +213,7 @@ public class ControlFlowStatements {
         }
 
         if (getDigitCount(number) != getDigitCount(numberToPrint)){
-            for (int i = leadingZereos; i>0; i--){
-//                digitString = digitString + "Zero ";
+            for (int i = leadingZeroes; i>0; i--){
                 System.out.println("Zero");
             }
         }
@@ -225,10 +224,12 @@ public class ControlFlowStatements {
 
         int inverse = 0;
         int digit;
-        int count = a;
+        int count = 0;
+        boolean wasNegative = false;
 
         if (a<0){
-            count = a * (-1);
+            a *= -1;
+            wasNegative = true;
         }
 
         count = getDigitCount(a);
@@ -240,7 +241,10 @@ public class ControlFlowStatements {
             a /= 10;
             count--;
         }
-//        System.out.println("Inverse is: " + inverse);
+        System.out.println("Inverse is: " + inverse);
+        if (wasNegative) {
+            inverse *= -1;
+        }
         return inverse;
     }
 
@@ -248,6 +252,8 @@ public class ControlFlowStatements {
     // Accounts for leading 0s -  100 -> 001
         if (i<0){
             return -1;
+        } else if (i==0) {
+            return 1;
         }
 
         int digitCount = 0;
@@ -258,5 +264,7 @@ public class ControlFlowStatements {
         }
         return digitCount;
     }
+
+
 
 }

@@ -61,6 +61,10 @@ public class Main {
         System.out.println(ControlFlowStatements.isPerfectNumber(5));
 
         System.out.println("\nNumber to Words: ");
-        ControlFlowStatements.numberToWords(1000);
+        ControlFlowStatements.numberToWords(1234);
+
+        System.out.println();
+        ParsingValues.canPack(2,5,9);
+
     }
 }
