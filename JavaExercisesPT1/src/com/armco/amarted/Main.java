@@ -1,5 +1,7 @@
 package com.armco.amarted;
 
+import java.util.ArrayList;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -63,7 +65,13 @@ public class Main {
         System.out.println("\nNumber to Words: ");
         ControlFlowStatements.numberToWords(1234);
 
-        System.out.println("\nCan make package: " + ParsingValues.canPack(2,10,18));
+        System.out.println("\nCan make package: " + ControlFlowStatements.canPack(2,10,18));
+
+//        System.out.println();
+//        InputOutputExercises.inputThenPrintSumAndAverage();
+
+        System.out.println("\nBuckets Needed: " + InputOutputExercises.getBucketCount(2.75,3.25,2.5,1));
+
 
     }
 }

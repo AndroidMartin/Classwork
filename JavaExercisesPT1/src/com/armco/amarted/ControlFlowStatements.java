@@ -1,5 +1,7 @@
 package com.armco.amarted;
 
+import java.util.Scanner;
+
 public class ControlFlowStatements {
 
     public static boolean isPalindrome(int number) {
@@ -285,11 +287,14 @@ public class ControlFlowStatements {
 
 
     public static int getLargestPrime(int number){
+        // SKIPPED CHALLENGE - NEED TO FIGURE OUT LOGIC FOR isPrimeNumber
         if (number < 2) {
             return -1;
         }
-
-
+        return 0;
     }
+
+
+
 
 }
