@@ -1,10 +1,16 @@
 package com.armco.amarted;
 
+import com.armco.amarted.Arrays.Array1;
+import com.armco.amarted.Arrays.Array1b;
 import com.armco.amarted.Constructors.CarpetCostAp.Calculator;
 import com.armco.amarted.Constructors.CarpetCostAp.Carpet;
 import com.armco.amarted.Constructors.CarpetCostAp.Floor;
 import com.armco.amarted.Constructors.Point;
 import com.armco.amarted.Constructors.Wall;
+import com.armco.amarted.Inheritance.Circle;
+import com.armco.amarted.Inheritance.Cuboid;
+import com.armco.amarted.Inheritance.Cylinder;
+import com.armco.amarted.Inheritance.Rectangle;
 
 public class Main {
 
@@ -104,6 +110,31 @@ public class Main {
         calculator = new Calculator(floor, carpet);
         System.out.println("total= " + calculator.getTotalCost());
 
+        // Inheritance Examples - Circle and Cylinder & Rectangle and Cuboid
+        System.out.println("\nCOMPUTING CYLINDRICAL DATA");
+        Circle circle = new Circle(3.75);
+        System.out.println("circle.radius= " + circle.getRadius());
+        System.out.println("circle.area= " + circle.getArea());
+        Cylinder cylinder = new Cylinder(5.55, 7.25);
+        System.out.println("cylinder.radius= " + cylinder.getRadius());
+        System.out.println("cylinder.height= " + cylinder.getHeight());
+        System.out.println("cylinder.area= " + cylinder.getArea());
+        System.out.println("cylinder.volume= " + cylinder.getVolume());
+        System.out.println("\nCOMPUTING CUBIC DATA");
+        Rectangle rectangle = new Rectangle(5, 10);
+        System.out.println("rectangle.width= " + rectangle.getWidth());
+        System.out.println("rectangle.length= " + rectangle.getLength());
+        System.out.println("rectangle.area= " + rectangle.getArea());
+        Cuboid cuboid = new Cuboid(5,10,5);
+        System.out.println("cuboid.width= " + cuboid.getWidth());
+        System.out.println("cuboid.length= " + cuboid.getLength());
+        System.out.println("cuboid.area= " + cuboid.getArea());
+        System.out.println("cuboid.height= " + cuboid.getHeight());
+        System.out.println("cuboid.volume= " + cuboid.getVolume());
 
+        // Array Examples - ***
+        System.out.println("\nCOMPUTING CYLINDRICAL DATA");
+        //Array1.printArray();
+        Array1b.professorArray();
     }
 }
