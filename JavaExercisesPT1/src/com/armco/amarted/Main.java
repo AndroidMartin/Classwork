@@ -2,6 +2,7 @@ package com.armco.amarted;
 
 import com.armco.amarted.Arrays.Array1;
 import com.armco.amarted.Arrays.Array1b;
+import com.armco.amarted.Arrays.MobileMain;
 import com.armco.amarted.Constructors.CarpetCostAp.Calculator;
 import com.armco.amarted.Constructors.CarpetCostAp.Carpet;
 import com.armco.amarted.Constructors.CarpetCostAp.Floor;
@@ -135,6 +136,7 @@ public class Main {
         // Array Examples - ***
         System.out.println("\nCOMPUTING CYLINDRICAL DATA");
         //Array1.printArray();
-        Array1b.professorArray();
+//        Array1b.professorArray();
+        MobileMain.mobileMain();
     }
 }
