@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TipCalculator</string>
+    <string name="button_text">Calculate</string>
+    <string name="tip_percentage">Tip Percentage</string>
+    <string name="bill_amount">Bill Amount</string>
+    <string name="gratuity_amount" />
+    <string name="gratuity_message">Suggested Gratuity</string>
+    <string name="final_bill" />
+    <string name="total_bill_text">Total Bill:</string>
+</resources>

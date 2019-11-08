@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CheckBox</string>
+    <string name="roomie1">Andrew</string>
+    <string name="roomie2">Ulwick</string>
+    <string name="favorite_roommate">Which roommates do you like?</string>
+    <string name="button_text">Submit</string>
+    <string name="result">Result</string>
+    <string name="roomie3">Murch</string>
+</resources>

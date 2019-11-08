@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">GroceryList</string>
+    <string name="action_settings">Settings</string>
+    <!-- Titles -->
+    <string name="add_item">Add New Item</string>
+    <string name="enter_item">Enter Grocery Item</string>
+    <!-- Hint Text Values -->
+    <string name="hint_item">Desired Item</string>
+    <string name="hint_qty">QTY</string>
+    <!-- Button Names -->
+    <string name="save_title">Save</string>
+    <string name="title_activity_list">ListActivity</string>
+    <!-- Alert Dialog Text -->
+    <string name="sure_text">Are you sure?!</string>
+    <string name="yes_text">Yes</string>
+    <string name="no_text">No</string>
+</resources>
