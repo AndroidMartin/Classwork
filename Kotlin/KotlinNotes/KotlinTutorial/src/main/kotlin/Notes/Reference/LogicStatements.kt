@@ -1,11 +1,13 @@
 package Notes.Reference
 
+import Notes.IntroToClasses.Enemy
+
 
 class LogicStatements {
 
     fun ifStatement(){
 
-    //      +++ IF STATEMENT +++
+    //      +++ USING THE "IF" STATEMENT +++
         val lives = 3
         var isGameOver = (lives < 1)  // <-- Setting a boolean based on a value
         if (isGameOver) {  // <-- Passing variable as a parameter
@@ -27,9 +29,41 @@ class LogicStatements {
     //    }
     }
 
+    //      +++ USING THE "FOR" STATEMENT +++
+    fun forStatement() {
+        for (i in 0..10) {  // <-- loops 11 times
+        println("$i doubled is ${i * 2}")
+        }
 
+        for (i in 0 until 10) {  // <-- loops 10 times
+            println("$i squared is ${i * i}")
+        }
+
+        for (i in 10 downTo 0) { // <-- counts down inclusively - 11 times
+            println("$i cubed is ${i * i * i}")
+        }
+
+        for (i in 10 downTo 0 step 2) {  // <-- counts down by multiples of 2
+            println("$i tripled is ${i + i + i}")
+        }
+
+
+        //  CHALLENGE: BETWEEN 0-100, FIND NUMBERS THAT ARE DIVISIBLE BY 3 & 5
+        for (i in 0 until 100) {
+            if (i % 3 == 0 && i % 5 == 0){
+                println(i)
+            }
+        }
+        for (value in 5..100 step 5) {  // <-- more efficient of the above (only tests 20 times)
+            if (value % 3 == 0) {
+                println(value)
+            }
+        }
+
+    }
+
+    //      +++ USING THE "WHEN" STATEMENT +++
     fun whenStatement() {
-        //      +++ USING THE "WHEN" STATEMENT +++
         val age = 15
         val message: String
         message = when {
@@ -40,6 +74,18 @@ class LogicStatements {
             //  much cleaner than long If statements - as noted in the commented section above
         }
         println(message)
+    }
+
+    //      +++ USING THE "WHILE" STATEMENT +++
+    fun whileStatement() {
+        val dracula = Enemy("Dracula")
+//        while (dracula.lives)
+    }
+
+    //      +++ USING THE "DO-WHILE" STATEMENT +++
+    fun forStatement() {
 
     }
+
+
 }

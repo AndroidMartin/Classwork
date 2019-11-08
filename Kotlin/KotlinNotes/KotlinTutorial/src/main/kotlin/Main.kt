@@ -3,26 +3,17 @@ import Notes.IntroToClasses.Player
 
 fun main(args: Array<String>) {
 
-    val player1 = Player("Andrew")  // <-- creates Player type variable with basic information
-    val player2 = Player("Volkan")  // <-- no level is specified, so the "constructor" uses default assigned value
+    for (i in 0 until 100) {
+        if (i % 3 == 0 && i % 5 == 0){
+            println(i)
+        }
+    }
 
-    player1.level = 5  // <-- level can be assigned later, but it really should be assigned when constructing the object
-
-    val player3 = Player("Louise", 5) // <-- overwrites the default value assigned in "java-like constructor"
-
-    player1.oldPrint()
-    player2.newPrint()
-    player3.newPrint()
-
-    val enemy1 = Enemy("Goblin")
-    val enemy2 = Enemy("Spore",5)
-    val enemy3 = Enemy("Orc", 5,3,3)
-
-    enemy1.bio()
-    enemy2.bio()
-    enemy3.bio()
-
-    // Using a Java-like constructor
+    for (value in 3..100 step 3) {
+        if (value % 5 == 0) {
+            println(value)
+        }
+    }
 
 
 }
