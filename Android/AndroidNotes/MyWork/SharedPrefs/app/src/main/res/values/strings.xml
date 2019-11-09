@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SharedPrefs</string>
+    <string name="enter_name">Enter Something Here...</string>
+    <string name="save_button">Save</string>
+</resources>

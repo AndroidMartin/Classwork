@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Converter</string>
+    <string name="fahrenheit">Fahrenheit:</string>
+    <string name="celsius">Celsius:</string>
+    <string name="enter_temp">Enter Temp</string>
+    <string name="convertButton">Convert</string>
+    <string name="error_message">Please enter a valid value</string>
+</resources>
